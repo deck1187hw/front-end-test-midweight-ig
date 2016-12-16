@@ -2,11 +2,14 @@
 var Github = function(){
 
 	var url = 'https://api.github.com/users';
+
+	/* ### REMOVE THIS ### */
 	var $mainList = 'ul#mainList';
 
 	
 	function showUser(userObj){
 
+		/* ### REMOVE THIS ### */
 		var html = `
 		  <li class="list-group-item" ng-userid="`+userObj.id+`">
 			  <div class="col col-xs-3">
@@ -22,7 +25,6 @@ var Github = function(){
 		  </li>
 		`;
 
-
 		$($mainList).hide().append(html).fadeIn();
 		return html;
 	}
@@ -33,6 +35,7 @@ var Github = function(){
 	them into the Dom (AJAX) */
 	var loadUsers = function(){
 		
+		/* ### REMOVE THIS ### */
 		$.ajax({
 		  url: url
 		})
@@ -47,6 +50,8 @@ var Github = function(){
 
 	/* This function will remove an user from the list */
 	var removeUser = function(d){
+
+		/* ### REMOVE THIS ### */
 		var $liElement = d.closest('li');
 		$($liElement).fadeOut(function() {
 		  $(this).remove();
@@ -54,19 +59,13 @@ var Github = function(){
 	};
 
 
-	/* Removes the users from the list (all) */
-	/*var clearList = function(){
-		$( $mainList+" li" ).each(function( index ) {
-		  $(this).fadeOut(function() {
-			  $(this).remove();
-			});
-		});
-	};
-*/
+
 
 	/* HINT!: You need to find a way to expose loadUsers() method 
 	so it´s accessible outside the module */
 
+
+	/* ### REMOVE THIS ### */
 		this.getUsers = loadUsers;
 		this.removeUser = function(d){
 			removeUser(d);
