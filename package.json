@@ -1,0 +1,27 @@
+{
+  "name": "test-front-end-ig-2",
+  "version": "1.0.0",
+  "description": "Test requests and dom management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Puig",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.26.1",
+    "imports-loader": "^0.7.0",
+    "jquery": "^3.1.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "devDependencies": {
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3"
+  }
+}
