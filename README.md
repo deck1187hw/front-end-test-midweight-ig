@@ -1,3 +1,6 @@
+# Front End Midweight test
+![alt text](https://raw.githubusercontent.com/deck1187hw/front-end-test-midweight-ig/master/iglogo.png "Logo Title Text 1")
+
 ## Installation
 - Clone the project:
 ``git clone https://github.com/deck1187hw/front-end-test-midweight-ig.git``
