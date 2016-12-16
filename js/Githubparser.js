@@ -37,7 +37,7 @@ var Github = function(){
 		  url: url
 		})
 		.done(function( data ) {
-			clearList();
+	
 		  	$.each( data, function( key, value ) {
 			  	showUser(value)
 			});
@@ -55,24 +55,22 @@ var Github = function(){
 
 
 	/* Removes the users from the list (all) */
-	var clearList = function(){
+	/*var clearList = function(){
 		$( $mainList+" li" ).each(function( index ) {
 		  $(this).fadeOut(function() {
 			  $(this).remove();
 			});
 		});
 	};
-
+*/
 
 	/* HINT!: You need to find a way to expose loadUsers() method 
 	so it´s accessible outside the module */
-	return{
-		getUsers:loadUsers,
-		clearList:clearList,
-		removeUser:function(d){
+
+		this.getUsers = loadUsers;
+		this.removeUser = function(d){
 			removeUser(d);
-		}
-	}
+		};
 
 };
 
