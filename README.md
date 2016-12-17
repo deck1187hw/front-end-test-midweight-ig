@@ -6,6 +6,8 @@
 ``git clone https://github.com/deck1187hw/front-end-test-midweight-ig.git``
 - Open it:
 ``cd front-end-test-midweight-ig``
+- Install the dependencies:
+``npm install``
 - Install the server:
 ``npm install webpack-dev-server -g``
 - Run the server:
